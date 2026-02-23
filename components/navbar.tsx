@@ -23,13 +23,14 @@ export function Navbar() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
-            <div className="flex items-center gap-2">
+            {/* <div className="flex items-center gap-2">
               <div className="w-8 h-8 bg-lifeful-magenta rounded-full"></div>
               <span className="font-bold text-lg">
                 <span className="text-lifeful-green">Life</span>
                 <span className="text-lifeful-magenta">Ful</span>
               </span>
-            </div>
+            </div> */}
+            <img src="/logo.png" alt="" className='w-[200px]' />
           </Link>
 
           {/* Desktop Navigation */}
