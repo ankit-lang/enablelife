@@ -45,10 +45,8 @@ export function ReasonsSection() {
             className="space-y-8"
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-              <span className="text-lifeful-magenta">5 top </span>
-              <span className="text-lifeful-dark">reasons to</span>
-              <br />
-              <span className="text-lifeful-dark">choose LifeFul.</span>
+              <span className="ml-20">Blogs </span>
+              
             </h2>
 
             <div className="space-y-6">

@@ -2,6 +2,9 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import Hero2 from './hero2'
+import Cards from './Card'
+import ContactAndReasons from './Contact'
 
 export function Hero() {
   return (
@@ -29,7 +32,7 @@ export function Hero() {
             {/* Main Arch Image */}
             <div className="relative z-0 w-full aspect-[4/5] lg:aspect-[3/4] rounded-t-full overflow-hidden bg-gray-200">
               <img
-                src="https://images.unsplash.com/photo-1590650153855-d9e808231d41?q=80&w=800&auto=format&fit=crop"
+                src="/banner1.png"
                 alt="Support worker pushing a boy in a wheelchair outdoors"
                 className="w-full h-full object-cover"
               />
@@ -38,7 +41,7 @@ export function Hero() {
             {/* Overlapping Circular Image */}
             <div className="absolute -bottom-12 -left-8 lg:-left-16 z-10 w-48 h-48 lg:w-64 lg:h-64 rounded-full border-[8px] border-white overflow-hidden bg-gray-200 shadow-sm">
               <img
-                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=400&auto=format&fit=crop"
+                src="/banner1.png"
                 alt="Three people sitting at a table discussing"
                 className="w-full h-full object-cover object-center"
               />
@@ -47,6 +50,9 @@ export function Hero() {
 
         </div>
       </div>
+      <Hero2/>
+      <Cards/>
+      <ContactAndReasons/>
     </section>
   )
 }
