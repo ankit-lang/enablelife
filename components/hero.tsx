@@ -8,19 +8,19 @@ import ContactAndReasons from './Contact'
 
 export function Hero() {
   return (
-    <section className="relative w-full bg-white py-16 lg:py-24 overflow-hidden">
+    <section className="relative w-full bg-white pt-24 pb-16 lg:py-24 overflow-hidden">
       {/* Container */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-8 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-8 items-center">
 
           {/* Left Column: Text Content */}
-          <div className="max-w-lg">
-            <h1 className="text-6xl lg:text-7xl font-bold tracking-tight text-black leading-[1.1]">
+          <div className="max-w-lg mx-auto lg:mx-0 text-center lg:text-left">
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight text-black leading-[1.1]">
               Live Life <br />
               on <span className="text-[#8CC63F]">your</span> <br />
               terms.
             </h1>
-            <p className="mt-6 text-lg text-gray-500 leading-relaxed">
+            <p className="mt-6 text-base sm:text-lg text-gray-500 leading-relaxed">
               At times, managing your NDIS plan can feel overwhelming.
               LifeFul is here to offer guidance and work through the
               process with you. You don't have to do it on your own!
@@ -28,7 +28,7 @@ export function Hero() {
           </div>
 
           {/* Right Column: Images */}
-          <div className="relative w-full max-w-md mx-auto lg:max-w-none lg:pl-12 mt-12 lg:mt-0">
+          <div className="relative w-full max-w-xs sm:max-w-sm mx-auto lg:max-w-none lg:pl-12 mt-8 lg:mt-0">
             {/* Main Arch Image */}
             <div className="relative z-0 w-full aspect-[4/5] lg:aspect-[3/4] rounded-t-full overflow-hidden bg-gray-200">
               <img
@@ -39,7 +39,7 @@ export function Hero() {
             </div>
 
             {/* Overlapping Circular Image */}
-            <div className="absolute -bottom-12 -left-8 lg:-left-16 z-10 w-48 h-48 lg:w-64 lg:h-64 rounded-full border-[8px] border-white overflow-hidden bg-gray-200 shadow-sm">
+            <div className="absolute -bottom-8 -left-4 sm:-bottom-12 sm:-left-8 lg:-left-16 z-10 w-32 h-32 sm:w-48 sm:h-48 lg:w-64 lg:h-64 rounded-full border-[6px] sm:border-[8px] border-white overflow-hidden bg-gray-200 shadow-sm">
               <img
                 src="/banner1.png"
                 alt="Three people sitting at a table discussing"
@@ -50,9 +50,9 @@ export function Hero() {
 
         </div>
       </div>
-      <Hero2/>
-      <Cards/>
-      <ContactAndReasons/>
+      <Hero2 />
+      <Cards />
+      <ContactAndReasons />
     </section>
   )
 }

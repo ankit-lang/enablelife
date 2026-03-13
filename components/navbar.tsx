@@ -30,7 +30,7 @@ export function Navbar() {
                 <span className="text-lifeful-magenta">Ful</span>
               </span>
             </div> */}
-            <img src="/logo.png" alt="" className='w-[200px]' />
+            <img src="/logo.png" alt="" className='w-[150px] sm:w-[200px]' />
           </Link>
 
           {/* Desktop Navigation */}

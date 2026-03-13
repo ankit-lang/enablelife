@@ -1,11 +1,11 @@
 import React from 'react';
- 
+
 const services = [
   {
     title: "NDIS Plan Management",
     image: "/banner1.png",
     // Flat bottom-left
-    shape: "rounded-tl-full rounded-tr-full rounded-br-full rounded-bl-none" 
+    shape: "rounded-tl-full rounded-tr-full rounded-br-full rounded-bl-none"
   },
   {
     title: "Support Coordination Services",
@@ -25,16 +25,16 @@ const services = [
     // Flat top-right
     shape: "rounded-tl-full rounded-tr-full rounded-br-full rounded-bl-none"
   },
- 
+
 ];
- 
+
 export default function Cards() {
   return (
-    <div className=" min-h-screen p-6 flex justify-center">
-      <div className="grid grid-cols-2 gap-x-4 gap-y-6 max-w-2xl w-full">
+    <div className="py-8 px-4 sm:px-6">
+      <div className="grid grid-cols-2 gap-4 sm:gap-6 max-w-2xl w-full mx-auto">
         {services.map((service, index) => (
-          <div 
-            key={index} 
+          <div
+            key={index}
             className={`
               relative aspect-square overflow-hidden group cursor-pointer shadow-md
               ${service.shape}
@@ -43,15 +43,15 @@ export default function Cards() {
             `}
           >
             {/* Background Image */}
-            <img 
-              src={service.image} 
-              alt={service.title} 
+            <img
+              src={service.image}
+              alt={service.title}
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
-            
+
             {/* Overlay for text readability */}
             <div className="absolute inset-0 bg-[#2b303a]/50 transition-colors group-hover:bg-[#2b303a]/60" />
-            
+
             {/* Centered Text */}
             <div className="absolute inset-0 flex items-center justify-center p-4 text-center">
               <h3 className="text-white font-medium text-sm sm:text-base leading-snug drop-shadow-md">
@@ -64,4 +64,3 @@ export default function Cards() {
     </div>
   );
 }
- 
